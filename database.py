@@ -18,20 +18,6 @@ article = """CREATE TABLE IF NOT EXISTS Articles (
     );"""
 
 cursor.execute(article)
-# open a csv file
-
-# with open('2022-08-31_theVerge.csv', 'r') as file:
-#     no_records = 0
-#     for row in file:
-#         cursor.execute(
-#             "INSERT INTO Articles VALUES(?, ?, ? , ?, ?)", row.split(','))
-#         conn.commit()
-#         no_records += 1
-# conn.close()
-# print("\n{} records inserted.".format(no_records))
-
-# # print("\nDatabase created.")
-# # conn.close()
 
 # Opening the person-records.csv file
 file = open(f"{date.today()}_theVerge.csv")
